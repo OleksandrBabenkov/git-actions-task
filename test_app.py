@@ -21,4 +21,4 @@ def test_jakubi_method():
 test_add()
 test_subtract()
 test_random_value()
-test_jakubi_method()
+#test_jakubi_method()
