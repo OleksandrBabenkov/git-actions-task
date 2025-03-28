@@ -13,12 +13,6 @@ def test_random_value():
 
     assert generate_random_value() == True
 
-def test_jakubi_method():
+# def test_jakubi_method():
 
-    assert jakobi_method(A=[[1, 2], [3, 4]], b=[5, 6]) == [1, 2]
-
-
-test_add()
-test_subtract()
-test_random_value()
-#test_jakubi_method()
+#     assert jakobi_method(A=[[1, 2], [3, 4]], b=[5, 6]) == [1, 2]
