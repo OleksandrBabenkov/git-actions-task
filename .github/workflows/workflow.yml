@@ -46,6 +46,8 @@ jobs:
     steps:
       - name: checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
 
 
       - name: check if there is a badge in readme
@@ -68,7 +70,6 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git checkout ${{ github.head_ref }}
           git add README.md
           git commit -m "added badge"
           git push
