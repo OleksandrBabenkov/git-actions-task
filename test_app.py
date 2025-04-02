@@ -1,4 +1,4 @@
-from myapp.app import add, subtract, generate_random_value, jakobi_method
+from myapp.app import *
 
 
 def test_add():
@@ -9,10 +9,8 @@ def test_subtract():
 
     assert subtract(2, 3) == -1
 
-def test_random_value():
+def test_multiply():
+    assert multiply(2, 3) == 6
 
-    assert generate_random_value() == True
-
-# def test_jakubi_method():
-
-#     assert jakobi_method(A=[[1, 2], [3, 4]], b=[5, 6]) == [1, 2]
+def test_divide():
+    assert divide(6, 3) == 2
