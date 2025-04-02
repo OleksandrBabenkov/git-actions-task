@@ -64,14 +64,14 @@ jobs:
         if: env.BADGE_EXISTS == 'false'
         run: |
           git config --global user.name "github-actions"
-          git config --global user.email "saniochok123@gmail.com"
+          git config --global user.email "github-actions@github.com"
           git add README.md
           git commit -m "added badge"
           git push
 
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-          GH_TOKEN : ${{ secrets.GITHUB_TOKEN }}
 
 
 
